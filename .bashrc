@@ -21,8 +21,6 @@ else # normal
      export PS1="\[\033[38;5;249m\][\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;3m\]\t\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;1m\]\$?\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;2m\]\u@\h\[$(tput sgr0)\]\[\033[38;5;15m\] :\[$(tput sgr0)\]\[\033[38;5;14m\]\W\[$(tput sgr0)\]\[\033[38;5;247m\]]\[$(tput sgr0)\]\[\033[38;5;15m\]\\$ \[$(tput sgr0)\]"
 fi
 
-#PS1='[\u@\h \W]\$ '
-
 if [ -f ~/.bash_aliases ]; then
  . ~/.bash_aliases
 fi
@@ -35,12 +33,4 @@ export EDITOR="vim"
 complete -cf sudo
 complete -cf man
 
-
-#if [ $(hostname) == "nepomuk" ]; then
-#	source /usr/share/doc/pkgfile/command-not-found.bash
-#	export BROWSER="chromium"
-#	export MOZ_PLUGIN_PATH="/usr/lib/mozilla/plugins"
-#	export XDG_CONFIG_HOME="$HOME/.config"
-#	export XDG_DATA_HOME="$HOME/.local/share"
-#	export XDG_CACHE_HOME="$HOME/.cache"
-#fi
+export PATH=$PATH:~/bin
