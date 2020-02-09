@@ -3,12 +3,13 @@ syntax on
 
 "" Farbschema
 "" weitere Schemata sind im Verzeichnis /usr/local/share/vim/vim63/colors/ aufgelistet
-colorscheme darkblue
+"colorscheme darkblue
 "colorscheme two2tango
+colorscheme jellybeans
 
 ""Zeilennumerirung
 set number
-"set list
+set list
 
 "" immer die Statuszeile mit dem Dateinamen anzeigen
 set ls=2
@@ -23,7 +24,7 @@ set hlsearch
 set incsearch
 
 "" Suchfunktion ignoriert Groß- und Kleinschreibung
-"set ignorecase
+set ignorecase
 
 "" Kompatibilitätsmodus zu vi abschalten
 set nocompatible
@@ -43,7 +44,7 @@ set ruler
 "" Wieviele Leerzeichen lang ist ein Tabulator?
 set tabstop=2
 "" Ersetze Tabulatoren durch Leerzeichen
-"set expandtab
+set expandtab
 "" Einrückungstiefe
 set shiftwidth=2
 "" alternative Einrückungsstile
@@ -53,12 +54,12 @@ set autoindent
 "" zeigt beim Schließen von Klammern kurz an, wo sie geöffnet wurde
 set showmatch
 
-let g:airline_theme = 'powerlineish'
-if !exists('g:airline_powerline_fonts')
-    " Use the default set of separators with a few customizations
-    let g:airline_left_sep=' ›'  " Slightly fancier than '>'
-    let g:airline_right_sep='‹ ' " Slightly fancier than '<'
-endif
+" let g:airline_theme = 'powerlineish'
+" if !exists('g:airline_powerline_fonts')
+"    " Use the default set of separators with a few customizations
+"    let g:airline_left_sep=' ›'  " Slightly fancier than '>'
+"    let g:airline_right_sep='‹ ' " Slightly fancier than '<'
+"endif
 
 " Environment
 "set directory=$XDG_CACHE_HOME/vim,~/,/tmp
