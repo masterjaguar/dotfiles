@@ -8,6 +8,7 @@ alias ll='ls -lah'
 
 alias sudoi='sudo -i'
 alias sudos='sudo -s'
+alias tz=trizen
 
 function psgrep () {
 	ps ax | grep "$1" | grep -v "grep"
